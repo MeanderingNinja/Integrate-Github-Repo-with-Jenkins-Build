@@ -1,9 +1,9 @@
 # Integrate-Github-repo-with-Jenkins-build
 This documentation is to showcase how I integrate a github repo with a Jenkins job for my CICD pipeline. 
 
-### Generating a token for Jenkins on Github 
+### Step 1: Generating a token for Jenkins on Github 
 
-### Setting up a webhook in your GitHub repository that points to your Jenkins instance
+### Step 2: Setting up a webhook in your GitHub repository that points to your Jenkins instance
 - Go to your GitHub repository and click on **"Settings"**
 - Then, click on **"Webhooks"** and click the **"Add webhook"** button.
 - Enter the **Payload URL** of your Jenkins instance and set the **content type** to **"application/json"**.
@@ -16,7 +16,7 @@ This documentation is to showcase how I integrate a github repo with a Jenkins j
 
 
 
-### Configuring Jenkins
+### Step 3: Configuring Jenkins
 * Install the **Github plugin** in "Manage Jenkins" -> "Manage Plugins".
 * Add the Github server in "Manage Jenkins" -> "Configure System" -> "Github"
   * Click the "**Add**" button to add a new GitHub server.
@@ -29,7 +29,7 @@ This documentation is to showcase how I integrate a github repo with a Jenkins j
 
 *Note: The github plugin allows Jenkins to receive notifications from GitHub when code changes occur, and trigger builds or other actions in response.*
 
-### Configuring the Jenkins project that I want to build a trigger for when code changes
+### Step 4: Configuring the Jenkins project that I want to build a trigger for when code changes
 - In Jenkins, click on "**Configure**" for the project, and go to the "**Build Triggers**" section.
 - Check the "**GitHub hook trigger for GITScm polling**" checkbox. This will enable the Jenkins project to automatically poll your GitHub repository for code changes and trigger a build if there are any.
 - Save the configuration changes.
