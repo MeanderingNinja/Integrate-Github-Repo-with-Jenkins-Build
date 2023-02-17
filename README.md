@@ -23,11 +23,13 @@ This documentation is to showcase how I integrate a github repo with a Jenkins j
   * In the "GitHub Server" section, enter a name for the server, and the API URL for your GitHub instance (e.g., <ins>https://api.github.com</ins>).
   * Enter personal access token (generated in GitHub that has the "repo" scope) in the "**Credentials**" section.
   * Click "**Test Connection**" to verify that Jenkins can connect to your GitHub instance.
-  * Scroll down to the "GitHub Web Hook" section and select the "Let Jenkins auto-manage hook URLs" option.
+  * Check the "Manage Hooks" field
   * Click "Save" to save the configuration.
 
 
-*Note: The github plugin allows Jenkins to receive notifications from GitHub when code changes occur, and trigger builds or other actions in response.*
+*Note:* 
+*1. The github plugin allows Jenkins to receive notifications from GitHub when code changes occur, and trigger builds or other actions in response.*
+*2. The "Manage Hooks" field allows you to configure Jenkins to automatically create and manage webhook URLs for your GitHub repositories. If this option is selected, Jenkins will automatically create webhook URLs for each repository that you add to a Jenkins job.*  
 
 ### Step 4: Configuring the Jenkins project that I want to build a trigger for when code changes
 - In Jenkins, click on "**Configure**" for the project, and go to the "**Build Triggers**" section.
