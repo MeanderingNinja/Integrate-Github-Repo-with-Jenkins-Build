@@ -9,7 +9,7 @@ This documentation is to showcase how I integrate a github repo with a Jenkins j
 
 ***Note***: 
 1. *A **payload URL** is the URL of a web service or API endpoint that receives incoming data from a webhook. In this case, a payload URL for a webhook that is set up to trigger a Jenkins build would be the URL of the Jenkins server followed by the path to the Jenkins job that you want to trigger.*
-2. *Since I set up a Jenkins server locally, I exposed it to the public using the [ngrok](https://www.youtube.com/watch?v=yMNJeWeE0qI) utility. 
+2. *Since I set up a Jenkins server locally, I exposed it to the public using the [ngrok](https://www.youtube.com/watch?v=yMNJeWeE0qI) utility.* 
 3. *I added `/github-webhook/` at the end of the ngrok-generated forward public ip address. The edited ip address is the one I used for the payload URL in the Github Webhook setting.*  
   
 ### Configuring the Jenkins project that I want to build a trigger for when code changes
