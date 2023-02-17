@@ -1,5 +1,5 @@
 # How to Integrate a Github Repo With a Jenkins Build
-This documentation is to showcase how I integrate a github repo with a Jenkins job for my CICD pipeline. 
+This documentation is to showcase how I integrated a github repo with a Jenkins job for my CICD pipeline. 
 
 ### Step 1: Generating a token for Jenkins on Github 
 
