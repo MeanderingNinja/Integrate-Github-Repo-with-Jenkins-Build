@@ -40,9 +40,9 @@
   * Click "**Save**" to save the configuration.
 
 
-*Note:* 
-*1. The github plugin allows Jenkins to receive notifications from GitHub when code changes occur, and trigger builds or other actions in response.*
-*2. The "Manage Hooks" field allows you to configure Jenkins to automatically create and manage webhook URLs for your GitHub repositories. If this option is selected, Jenkins will automatically create webhook URLs for each repository that you add to a Jenkins job.*  
+*Note:*
+1. ***The github plugin** allows Jenkins to receive notifications from GitHub when code changes occur, and trigger builds or other actions in response.*
+2. ***The "Manage Hooks" field** allows you to configure Jenkins to automatically create and manage webhook URLs for your GitHub repositories. If this option is selected, Jenkins will automatically create webhook URLs for each repository that you add to a Jenkins job.*  
 
 ### Step 4: Configuring the Jenkins project that I want to build a trigger for when code changes
 - In Jenkins, click on "**Configure**" for the project, and go to the "**Build Triggers**" section.
