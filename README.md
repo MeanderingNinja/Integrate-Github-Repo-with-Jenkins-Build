@@ -1,10 +1,20 @@
 # How to Integrate a Github Repo With a Jenkins Build
 This documentation is to showcase how I integrated a github repo with a Jenkins job for my CICD pipeline. 
 ## Setup 
-- The Jenkins Server Version: 2.375.3(Installed locally on a Ubuntu machine)
-- Github Repo Used: https://github.com/emma-jinger/cat_data (A Jenkinsfile is included in the repo)
+- **The Jenkins Server Version**: 2.375.3 (Installed locally on a Ubuntu machine)
+- **The Github Repo Used**: https://github.com/emma-jinger/cat_data (A Jenkinsfile is included in the repo)
 
 ### Step 1: Generating a token for Jenkins on Github 
+- Log in to your GitHub account.
+- Click on your profile icon in the top right corner of the page and select "Settings" from the dropdown menu.
+- In the left sidebar, click on "Developer settings" and then select "Personal access tokens."
+- Click on the "Generate new token" button.
+- Enter a description for the token that will help you remember its purpose.
+- Under "Select scopes," check the box next to "repo" to grant the token access to all of your repositories, including private ones.
+- Click the "Generate token" button at the bottom of the page.
+- GitHub will generate a new personal access token for you. Be sure to copy and save this token in a safe place because it will not be displayed again. Note that this token gives access to your GitHub repositories, so keep it secure and do not share it with others.
+
+Now I can use my personal access token on the Jenkins server to access my GitHub repositories.
 
 ### Step 2: Setting up a webhook in your GitHub repository that points to your Jenkins instance
 - Go to your GitHub repository and click on **"Settings"**
@@ -19,15 +29,15 @@ This documentation is to showcase how I integrated a github repo with a Jenkins 
 
 
 
-### Step 3: Configuring Jenkins
-* Install the **Github plugin** in "Manage Jenkins" -> "Manage Plugins".
-* Add the Github server in "Manage Jenkins" -> "Configure System" -> "Github"
+### Step 3: Configuring Jenkins to handle incoming webhooks
+* **Install the Github plugin** in "Manage Jenkins" -> "Manage Plugins".
+* **Add the Github server** in "Manage Jenkins" -> "Configure System" -> "Github"
   * Click the "**Add**" button to add a new GitHub server.
-  * In the "GitHub Server" section, enter a name for the server, and the API URL for your GitHub instance (e.g., <ins>https://api.github.com</ins>).
+  * In the "**GitHub Server**" section, enter a name for the server, and the API URL for your GitHub instance (e.g., <ins>https://api.github.com</ins>).
   * Enter personal access token (generated in GitHub that has the "repo" scope) in the "**Credentials**" section.
   * Click "**Test Connection**" to verify that Jenkins can connect to your GitHub instance.
-  * Check the "Manage Hooks" field
-  * Click "Save" to save the configuration.
+  * Check the "**Manage Hooks**" field
+  * Click "**Save**" to save the configuration.
 
 
 *Note:* 
