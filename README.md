@@ -1,5 +1,5 @@
 # How to Integrate a Github Repo With a Jenkins Build
-#### This documentation is to showcase how I integrated a github repo with a Jenkins job for my CICD pipeline. 
+### This documentation is to showcase how I integrated a github repo with a Jenkins job for my CICD pipeline. 
 ## Setup 
 - **The Jenkins Server Version**: 2.375.3 (Installed locally on a Ubuntu machine)
 - **The Github Repo Used**: https://github.com/emma-jinger/cat_data (A Jenkinsfile is included in the repo)
