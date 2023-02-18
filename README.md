@@ -5,11 +5,11 @@ This documentation is to showcase how I integrated a github repo with a Jenkins 
 - **The Github Repo Used**: https://github.com/emma-jinger/cat_data (A Jenkinsfile is included in the repo)
 
 ### Step 1: Generating a token for Jenkins on Github 
-- Log in to your GitHub account.
-- Click on your profile icon in the top right corner of the page and select "Settings" from the dropdown menu.
+- Log in to my GitHub account.
+- Click on my profile icon in the top right corner of the page and select "Settings" from the dropdown menu.
 - In the left sidebar, click on "Developer settings" and then select "Personal access tokens."
 - Click on the "Generate new token" button.
-- Enter a description for the token that will help you remember its purpose.
+- Enter a description for the token that will help me remember its purpose.
 - Under "Select scopes," check the box next to "repo" to grant the token access to all of your repositories, including private ones.
 - Click the "Generate token" button at the bottom of the page.
 - GitHub will generate a new personal access token for you. Be sure to copy and save this token in a safe place because it will not be displayed again. Note that this token gives access to your GitHub repositories, so keep it secure and do not share it with others.
