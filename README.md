@@ -14,7 +14,7 @@ This documentation is to showcase how I integrated a github repo with a Jenkins 
 - Click the "Generate token" button at the bottom of the page.
 - GitHub will generate a new personal access token for you. Be sure to copy and save this token in a safe place because it will not be displayed again. Note that this token gives access to your GitHub repositories, so keep it secure and do not share it with others.
 
-Now I can use my personal access token on the Jenkins server to access my GitHub repositories.
+**Now I can use my personal access token on the Jenkins server to access my GitHub repositories!**
 
 ### Step 2: Setting up a webhook in your GitHub repository that points to your Jenkins instance
 - Go to your GitHub repository and click on **"Settings"**
@@ -49,6 +49,6 @@ Now I can use my personal access token on the Jenkins server to access my GitHub
 - Check the "**GitHub hook trigger for GITScm polling**" checkbox. This will enable the Jenkins project to automatically poll your GitHub repository for code changes and trigger a build if there are any.
 - Save the configuration changes.
 
-Now, whenever there is a code change in my GitHub repository, Jenkins should automatically trigger a build in response to the code change.
+#### Now, whenever there is a code change in my GitHub repository, Jenkins should automatically trigger a build in response to the code change!
 
 
