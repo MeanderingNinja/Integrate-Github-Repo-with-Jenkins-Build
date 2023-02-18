@@ -4,7 +4,7 @@
 - **The Jenkins Server Version**: 2.375.3 (Installed locally on a Ubuntu machine)
 - **The Github Repo Used**: https://github.com/emma-jinger/cat_data (A Jenkinsfile is included in the repo)
 
-### Step 1: Generating a token for Jenkins on Github 
+## Step 1: Generating a token for Jenkins on Github 
 - Log in to my GitHub account.
 - Click on my profile icon in the top right corner of the page and select "Settings" from the dropdown menu.
 - In the left sidebar, click on "Developer settings" and then select "Personal access tokens."
@@ -16,7 +16,7 @@
 
 **Now I can use my personal access token on the Jenkins server to access my GitHub repositories!**
 
-### Step 2: Setting up a webhook in your GitHub repository that points to your Jenkins instance
+## Step 2: Setting up a webhook in your GitHub repository that points to your Jenkins instance
 - Go to your GitHub repository and click on **"Settings"**
 - Then, click on **"Webhooks"** and click the **"Add webhook"** button.
 - Enter the **Payload URL** of your Jenkins instance and set the **content type** to **"application/json"**.
@@ -29,7 +29,7 @@
 
 
 
-### Step 3: Configuring Jenkins to handle incoming webhooks
+## Step 3: Configuring Jenkins to handle incoming webhooks
 * **Install the Github plugin** in "Manage Jenkins" -> "Manage Plugins".
 * **Add the Github server** in "Manage Jenkins" -> "Configure System" -> "Github"
   * Click the "**Add**" button to add a new GitHub server.
@@ -44,7 +44,7 @@
 1. ***The github plugin** allows Jenkins to receive notifications from GitHub when code changes occur, and trigger builds or other actions in response.*
 2. ***The "Manage Hooks" field** allows you to configure Jenkins to automatically create and manage webhook URLs for your GitHub repositories. If this option is selected, Jenkins will automatically create webhook URLs for each repository that you add to a Jenkins job.*  
 
-### Step 4: Configuring the Jenkins project that I want to build a trigger for when code changes
+## Step 4: Configuring the Jenkins project that I want to build a trigger for when code changes
 - In Jenkins, click on "**Configure**" for the project, and go to the "**Build Triggers**" section.
 - Check the "**GitHub hook trigger for GITScm polling**" checkbox. This will enable the Jenkins project to automatically poll your GitHub repository for code changes and trigger a build if there are any.
 - Save the configuration changes.
