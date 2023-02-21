@@ -3,7 +3,7 @@
 ## Setup 
 - **The Jenkins Server Version**: 2.375.3 (Installed locally on a Ubuntu machine)
 - **The Github Repo Used**: https://github.com/emma-jinger/cat_data (A Jenkinsfile is included in the repo)
-- **A Jenkins project has been installed** on the Jenkins server.
+- **A Jenkins project has been set up** on the Jenkins server.
 
 ## Step 1: Generating a token for Jenkins on Github 
 - Log in to my GitHub account.
