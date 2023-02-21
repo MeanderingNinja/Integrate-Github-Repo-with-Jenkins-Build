@@ -16,7 +16,7 @@
 
 **Now I can use my personal access token on the Jenkins server to access my GitHub repositories!**
 
-## Step 2: Setting up a webhook in your GitHub repository that points to your Jenkins instance
+## Step 2: Setting up a webhook in your GitHub repository that points to my Jenkins instance
 - Go to your GitHub repository and click on **"Settings"**
 - Then, click on **"Webhooks"** and click the **"Add webhook"** button.
 - Enter the **Payload URL** of your Jenkins instance and set the **content type** to **"application/json"**.
